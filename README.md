@@ -1,2 +1,0 @@
-# software
-cosas de software
