@@ -70,6 +70,10 @@ p{
     display: flex;
     justify-content: center;
 }
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
 .padre{
     display: flex;
     justify-content: space-around;
@@ -108,5 +112,17 @@ button:active{
     }
     .desaparece{
         display: none;
+    }
+}
+@media (max-width: 1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 600px){
+    .columna{
+        width: 100%;
+        margin: 25px;
     }
 }
