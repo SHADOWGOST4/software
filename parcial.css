@@ -23,9 +23,21 @@ nav{
     border-radius: 23px;
 }
 button{
-    background: rgb(255, 0, 212);
-    border: 3px double rgb(248, 244, 0);
+    background: rgb(140, 42, 226);
+    border: 3px solid rgb(56, 223, 204);
     display: none;
+    box-shadow: 5px 5px 5px rgb(34, 69, 175);
+    border-radius: 7px;
+}
+button:hover{
+    background: rgb(135, 177, 246);
+    border: 2px solid rgb(113, 235, 156);
+}
+button:active{
+    background: none;
+}
+.text-center{
+    text-align: center;
 }
 h1{
     font-size: 30px;
@@ -46,37 +58,95 @@ p{
 .columna{
     border: 2px solid black;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
-    box-shadow: 12px 12px 12px #111;
     width: 24%;
     box-sizing: border-box;
+}
+.boton{
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 30px;
 }
 .columna1{
     background: rgba(38, 68, 41, 0.9);
     color: rgb(78, 195, 211);
+    box-shadow: 12px 12px 12px rgb(24, 44, 26);
+}
+.boton1{
+    background: rgba(80, 124, 85, 0.9);
+    color: rgb(62, 155, 168);
+    box-shadow: 12px 12px 12px rgb(24, 44, 26);
+}
+.boton1:hover{
+    background: rgba(80, 124, 85);
+    color: rgb(62, 155, 168);
+    box-shadow: 12px 12px 22px rgb(24, 44, 26);
+}
+.columna1:hover{
+    background: rgba(38, 68, 41);
+    box-shadow: 18px 18px 22px rgb(24, 44, 26);
 }
 .columna2{
     background: rgb(114, 96, 45, 0.9);
     color: rgb(0, 0, 0);
-}.columna3{
+    box-shadow: 12px 12px 12px rgb(68, 57, 26);
+}
+.boton2{
+    background: rgba(161, 136, 64, 0.9);
+    color: rgb(0, 0, 0);
+    box-shadow: 12px 12px 12px rgb(68, 57, 26);
+}
+.boton2:hover{
+    background: rgb(161, 136, 64);
+    color: rgb(0, 0, 0);
+    box-shadow: 12px 12px 22px rgb(68, 57, 26);
+}
+.columna2:hover{
+    background: rgb(114, 96, 45);
+    box-shadow: 18px 18px 22px rgb(68, 57, 26);
+}
+.columna3{
     background: rgb(0, 0, 0, 0.9);
     color: rgb(4, 0, 255);
-}.columna4{
-    background: rgb(172, 32, 130, 0.9);
-    color: rgb(117, 63, 31,);
+    box-shadow: 12px 12px 12px rgb(0, 0, 0);
 }
-.imagen{
-    display: flex;
-    justify-content: center;
+.boton3{
+    background: rgba(28, 28, 28, 0.9);
+    color: rgb(4, 0, 255);
+    box-shadow: 12px 12px 12px rgb(34, 34, 34);
+}
+.boton3:hover{
+    background: rgb(46, 46, 46);
+    box-shadow: 18px 18px 22px rgb(51, 51, 51);
+}
+.columna3:hover{
+    background: rgb(0, 0, 0);
+    box-shadow: 18px 18px 22px rgb(0, 0, 0);
+}
+.columna4{
+    background: rgb(172, 32, 130, 0.9);
+    color: rgb(0, 0, 0);
+    box-shadow: 12px 12px 12px rgb(125, 23, 94);
+}
+.boton4{
+    background: rgba(216, 39, 163, 0.9);
+    color: rgb(0, 0, 0);
+    box-shadow: 12px 12px 12px rgb(125, 23, 94);
+}
+.boton4:hover{
+    background: rgb(230, 42, 173);
+    box-shadow: 18px 18px 22px rgb(125, 23, 94);
+}
+.columna4:hover{
+    background: rgb(172, 32, 130);
+    box-shadow: 18px 18px 22px rgb(125, 23, 94);
 }
 .flex{
     display: flex;
     flex-wrap: wrap;
-}
-.padre{
-    display: flex;
-    justify-content: space-around;
 }
 img{
     width: 200px;
@@ -86,18 +156,13 @@ img{
 }
 body{
     background-repeat:round;
-    font-family: 'Silkscreen',cursive;
+    font-family: 'Silkscreen';
 }
-.titulo{
-    background: rgb(38, 68, 41);
-    color: rgb(78, 195, 211);
-}
-button:hover{
-    background: rgb(0, 255, 55);
-    border: 2px double rgb(255, 7, 7);
-}
-button:active{
-    background: none;
+@media (max-width: 1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 25px;
+    }
 }
 @media (max-width: 600px) {
     nav{
@@ -113,14 +178,6 @@ button:active{
     .desaparece{
         display: none;
     }
-}
-@media (max-width: 1070px){
-    .columna{
-        width: 45%;
-        margin-bottom: 25px;
-    }
-}
-@media (max-width: 600px){
     .columna{
         width: 100%;
         margin: 25px;
