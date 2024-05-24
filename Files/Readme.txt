@@ -1,6 +1,6 @@
 Pista Reto 2
 
-Hola, Descifra como usar el codigo con las imagenes :)
+Hola, Descifra como usar el codigo PY con la imagen :)
 
 LA MEJOR WAIFU
 Suerte Y No Te Rindas
